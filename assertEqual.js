@@ -8,6 +8,8 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+export default assertEqual;
+
 // TEST CODE
-console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.log(assertEqual(1, 1));
+// console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
+// console.log(assertEqual(1, 1));

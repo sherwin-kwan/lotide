@@ -1,0 +1,12 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "library of basic javascript functions for lighthouse labs",
+  "type": "module",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sherwin Kwan",
+  "license": "BSD 3-clause"
+}
