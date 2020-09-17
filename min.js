@@ -13,6 +13,7 @@ const min = function(numbers) {
   return min;
 };
 
+export default min;
 
 /*
  * This is some test runner code that's simply calling our min function defined
