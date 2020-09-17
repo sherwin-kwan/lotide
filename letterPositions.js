@@ -1,5 +1,5 @@
 const letterPositions = (str) => {
-  if (typeof str != 'string') {
+  if (typeof str !== 'string') {
     console.log('Please enter a string');
     return;
   }

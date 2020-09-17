@@ -7,7 +7,7 @@ const countLetters = (str) => {
     }
   }
   return output;
-}
+};
 
 const expected = {
   l: 1,
@@ -20,7 +20,7 @@ const expected = {
   s: 2,
   e: 3,
   n: 1,
-}
+};
 
 console.log(countLetters('lighthouse labs'));
 console.log(countLetters('lighthouse in the house'));
