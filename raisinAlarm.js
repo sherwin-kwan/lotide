@@ -7,6 +7,8 @@ const raisinAlarm = function(cookie) {
   return "All good!";
 };
 
+// testing
+
 console.log(raisinAlarm(["🍫", "🍫", "🍇", "🍫"])); // Raisin alert!
 console.log(raisinAlarm(["🍫", "🍇", "🍫", "🍫", "🍇"])); // Raisin alert!
 console.log(raisinAlarm(["🍫", "🍫", "🍫"])); // All good!
