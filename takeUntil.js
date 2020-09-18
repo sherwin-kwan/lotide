@@ -1,12 +1,13 @@
 const takeUntil = (arr, pred) => {
   let results = new Array;
-  arr.forEach(e => {
+  for (let e of arr) {
     if (!pred(e)) results.push(e);
-  });
+    else break;
+  }
   return results;
 }
 
-console.log(takeUntil([1,2,3,4,5], e => e > 3));
+console.log(takeUntil([1, 2, 3, 4, 5], e => e > 3));
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
