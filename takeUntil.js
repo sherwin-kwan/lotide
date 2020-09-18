@@ -5,7 +5,7 @@ const takeUntil = (arr, pred) => {
     else break;
   }
   return results;
-}
+};
 
 console.log(takeUntil([1, 2, 3, 4, 5], e => e > 3));
 
