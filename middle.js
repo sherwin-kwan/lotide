@@ -1,4 +1,4 @@
-import assertArraysEqual from './assertArraysEqual.js';
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 const middle = (arr) => {
   if (!Array.isArray(arr)) {
@@ -19,9 +19,4 @@ const middle = (arr) => {
   }
 }
 
-// TEST CODE
-assertArraysEqual(middle(['this',`sentence's`,'middle','word','is']), ['middle']);
-assertArraysEqual(middle(['this',`sentence's`,'two', 'middle','words','are']), ['two', 'middle']);
-assertArraysEqual(middle(['this should return','an empty array']), []);
-assertArraysEqual(middle([`this should return an empty array`]), []);
-
+module.exports = middle;

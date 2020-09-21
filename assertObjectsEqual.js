@@ -1,5 +1,5 @@
-import eqObjects from './eqObjects.js';
-import { inspect } from 'util';
+const eqObjects = require('./eqObjects.js');
+const inspect = require('util').inspect;
 
 const assertObjectsEqual = (actual, expected) => {
   if (eqObjects(actual, expected)) {
@@ -9,15 +9,4 @@ const assertObjectsEqual = (actual, expected) => {
   }
 };
 
-export default assertObjectsEqual;
-
-// TEST CODE
-assertObjectsEqual([1, 2, 3], [1, 2, 3]);
-assertObjectsEqual([1, 2, 3, 4], [1, 2, 3]);
-assertObjectsEqual([1, "2", 3], [1, 2, 3]);
-assertObjectsEqual([],[]);
-assertObjectsEqual({a: 1, b: 2},{a: 1, b: 2});
-assertObjectsEqual({a: 1, b: 2},{b: 2, a: 1});
-assertObjectsEqual({a: 1},{a: 2});
-
-// Expected: true, false, false, true, true, true, false
+module.exports = assertObjectsEqual;

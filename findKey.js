@@ -1,4 +1,4 @@
-import assertEqual from './assertEqual.js';
+const assertEqual = require('./assertEqual.js');
 
 const findKey = (obj, pred) => {
   for (let key of Object.keys(obj)) {

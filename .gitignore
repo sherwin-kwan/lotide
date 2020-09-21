@@ -1,0 +1,4 @@
+// Files to ignore
+
+*.log
+node_modules/

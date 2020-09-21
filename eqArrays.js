@@ -1,4 +1,4 @@
-import assertEqual from './assertEqual.js';
+const assertEqual = require('./assertEqual.js');
 
 const eqArrays =  /* both inputs are arrays */ (actual, expected) => {
   if (actual.length !== expected.length) {
@@ -21,13 +21,6 @@ const eqArrays =  /* both inputs are arrays */ (actual, expected) => {
   return true;
 };
 
-export default eqArrays;
-// TEST CODE
-// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-// assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false);
-// assertEqual(eqArrays([1, 2.5, 3], [1, 2, 3]), false);
-// assertEqual(eqArrays([1, "2", 3], [1, 2, 3]), false);
-// assertEqual(eqArrays(1, [1, 2, 3]), false);
-// assertEqual(eqArrays([],[]), true);
-// assertEqual(eqArrays([1, [2, [3, [4, 5]]]], [1, [2, [3, [4, 5]]]]), true)
+module.exports = eqArrays;
+
  

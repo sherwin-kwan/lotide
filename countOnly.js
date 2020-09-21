@@ -1,7 +1,7 @@
 
 // This function returns an object showing how many of each item in itemsToCount appears in allItems
 
-import assertEqual from './assertEqual.js';
+const assertEqual = require('./assertEqual.js');
 
 // Plan:
 // Iterate through elements of allItems

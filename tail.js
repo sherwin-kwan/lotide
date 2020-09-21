@@ -1,4 +1,4 @@
-import assertEqual from './assertEqual.js';
+const assertEqual = require('./assertEqual.js');
 
 const tail = (arr) => {
   if (Array.isArray(arr)) {
@@ -8,14 +8,4 @@ const tail = (arr) => {
   }
 };
 
-// TEST CODE
-
-const words = ['Hello', 'Lighthouse', 'Labs']
-const result = tail(words);
-const expected = (['Lighthouse', 'Labs']);
-
-assertEqual(result.length, expected.length); 
-for (let i = 0; i < result.length; i++) {
-  assertEqual(result[i], expected[i]);
-};
-assertEqual(words.length, 3);
+module.exports = tail;

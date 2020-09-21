@@ -1,4 +1,4 @@
-import eqArrays from './eqArrays.js';
+const eqArrays = require('./eqArrays.js');
 
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
@@ -8,12 +8,5 @@ const assertArraysEqual = (actual, expected) => {
   }
 };
 
-export default assertArraysEqual;
+module.exports = assertArraysEqual;
 
-// TEST CODE
-// assertArraysEqual([1, 2, 3], [1, 2, 3]);
-// assertArraysEqual([1, 2, 3, 4], [1, 2, 3]);
-// assertArraysEqual([1, 2.5, 3], [1, 2, 3]);
-// assertArraysEqual([1, "2", 3], [1, 2, 3]);
-// assertArraysEqual(1, [1, 2, 3]);
-// assertArraysEqual([],[]);

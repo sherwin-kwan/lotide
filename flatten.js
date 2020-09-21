@@ -1,15 +1,10 @@
-import assertArraysEqual from './assertArraysEqual.js';
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 // Steps:
 // 1. Create a flattened array to output
 // 2. Loop through array
 // 3. If it's already a scalar, just push it to the output array
 // 4. If it's an array, push its elements to the output array
-
-const testArray = [1, 2, [3, 4], [5, 6], 7, 8, [9, 10]];
-const testArray2 = [];
-const testArray3 = [1, [2, [3, [4, 5]]], 6, [7, [8, [9, 10]]]];
-const testArray4 = ['a', 'b', ['c', 'd', 'e'], 'f', ['g', 'h', 'i', 'j']];
 
 const flatten = (arr) => {
   let outputArray = [];
@@ -33,7 +28,4 @@ const flatten = (arr) => {
   return outputArray;
 };
 
-assertArraysEqual(flatten(testArray), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-assertArraysEqual(flatten(testArray2), []);
-assertArraysEqual(flatten(testArray3), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-assertArraysEqual(flatten(testArray4), ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']);
+module.exports = flatten;

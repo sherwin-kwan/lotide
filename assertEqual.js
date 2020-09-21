@@ -1,6 +1,6 @@
 'use strict';
-import eqObjects from './eqObjects.js';
-import { inspect } from 'util';
+const eqObjects = require('./eqObjects')
+const inspect = require('util').inspect;
 
 // assertEqual now handles objects and primitives
 const assertEqual = (actual, expected) => {
@@ -17,7 +17,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-export default assertEqual;
+module.exports = assertEqual;
 
 // TEST CODE
 // console.log(assertEqual("Lighthouse Labs", "Bootcamp"));

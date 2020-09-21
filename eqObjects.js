@@ -7,8 +7,8 @@
 // You may switch between V1 and V2 by changing line 32.
 // See: './eqObjectsTests.js' to have fun with these functions
 
-import assertEqual from './assertEqual.js'; // Only used for testing
-import eqArrays from './eqArrays.js';
+const assertEqual = require('./assertEqual.js'); // Only used for testing
+const eqArrays = require('./eqArrays.js');
 
 //
 // ORIGINAL VERSION: Handles arrays and primitives. Don't use for objects.
@@ -57,4 +57,4 @@ const eqObjects = (actual, expected) => {
   };
 }
 
-export default eqObjects;
+module.exports = eqObjects;

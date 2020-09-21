@@ -1,4 +1,4 @@
-import assertEqual from './assertEqual.js';
+const assertEqual = require('./assertEqual.js');
 
 const findKeyByValue = (obj, valueQuery) => {
   for (let key of Object.keys(obj)) {
