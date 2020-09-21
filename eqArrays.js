@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual.js');
+
 
 const eqArrays =  /* both inputs are arrays */ (actual, expected) => {
   if (actual.length !== expected.length) {

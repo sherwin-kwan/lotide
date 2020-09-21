@@ -12,4 +12,4 @@ const max = (arr) => {
   return [max, maxIndex];
 }
 
-export default max;
+module.exports = max;

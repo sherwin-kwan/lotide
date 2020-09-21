@@ -57,3 +57,5 @@ const sortObjectsByAge = (obj1, obj2) => {
 
 console.log(`Now let's experiment with a chain of callbacks.`);
 console.log(students.sort(multiLevelSort(sortObjectsByName, sortObjectsByAge)));
+
+module.exports = { multiLevelSort, multiTypeSort };
