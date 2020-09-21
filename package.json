@@ -1,13 +1,18 @@
 {
   "name": "@sherwin-kwan/lotide",
+  "bugs": {
+    "url": "https://github.com/sherwin-kwan/lotide/issues"
+  },
   "version": "1.0.0",
   "description": "library of basic javascript functions for lighthouse labs",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "Sherwin Kwan",
-  "license": "BSD 3-clause",
+  "author": {
+    "name": "Sherwin Kwan"
+  },
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.3"
